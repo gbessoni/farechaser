@@ -1,0 +1,1 @@
+{"mcpServers":{"farechaser":{"args":["./mcp-server/server.mjs"],"command":"node","cwd":".","startup_timeout_sec":30}}}
