@@ -1,0 +1,23 @@
+name = "farechaser"
+main = "src/index.ts"
+compatibility_date = "2026-10-28"
+compatibility_flags = ["nodejs_compat"]
+
+# Hosted remote MCP server on Cloudflare Workers.
+# Deploy: npx wrangler login && npx wrangler secret put DUFFEL_API_KEY && npx wrangler deploy
+# Live at: https://farechaser.<YOUR-CLOUDFLARE-ACCOUNT>.workers.dev/mcp
+# Or attach a custom domain later (recommended — Cloudflare may change workers.dev subdomains).
+
+[vars]
+MCP_NAME = "farechaser"
+
+# KV for baselines (90-day median per route/cabin) — create first:
+#   npx wrangler kv namespace create FARECHASER_KV
+# then uncomment and paste the id:
+# [[kv_namespaces]]
+# binding = "FARECHASER_KV"
+# id = "PASTE_ID_HERE"
+
+# Cron for the hourly mistake-fare sweep (free: 5 cron triggers/account):
+# [triggers]
+# crons = ["0 * * * *"]
