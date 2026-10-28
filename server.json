@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "description": "Cheap holiday flight deals from your home airport, checked against live fares.",
+  "name": "io.github.gbessoni/farechaser",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://farechaser.YOUR-CLOUDFLARE-ACCOUNT.workers.dev/mcp"
+    }
+  ],
+  "repository": {
+    "source": "github",
+    "url": "https://github.com/gbessoni/farechaser"
+  },
+  "title": "FareChaser",
+  "version": "0.1.0",
+  "websiteUrl": "https://github.com/gbessoni/farechaser"
+}

@@ -1,0 +1,1 @@
+{"description":"Find cheap holiday flights from your home airport. Thanksgiving, Christmas and New Year deals, checked against live fares.","mcpServers":{"farechaser":{"args":["${extensionPath}/mcp-server/server.mjs"],"command":"node"}},"name":"farechaser","version":"0.1.0"}
